@@ -18,6 +18,8 @@ gem "puma", "~> 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
+gem 'jsbundling-rails'
+
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
@@ -70,3 +72,19 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+# Spree gems
+gem 'spree', '~> 4.7.0'
+gem 'spree_core', '~> 4.7.0'
+gem 'spree_api', '~> 4.7.0'
+gem 'spree_sample', '~> 4.7.0'
+gem 'spree_emails', '~> 4.7.0'
+gem 'spree_backend', '~> 4.7.0'
+gem 'spree_frontend', '~> 4.7.0'
+gem 'spree_gateway', '~> 3.10.0'
+gem 'spree_auth_devise', '~> 4.6.0'
+gem 'spree_i18n', '~> 5.3.0'
+gem 'spree_multi_vendor', github: 'spree-contrib/spree_multi_vendor', branch: 'main'
+
+# only needed for MacOS and Ruby 3.0
+gem 'sassc', github: 'sass/sassc-ruby', branch: 'master'
